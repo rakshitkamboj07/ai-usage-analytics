@@ -40,6 +40,13 @@ class License(Base):
         nullable=False,
     )
 
+    source: Mapped[str] = mapped_column(
+        String(50),
+        default="manual",
+        server_default="manual",
+        nullable=False,
+    )
+
     assigned_date: Mapped[date] = mapped_column(
         Date,
         default=date.today,

@@ -20,5 +20,9 @@ class Settings(BaseSettings):
 
     SECRET_KEY: str
 
+    GRAPH_TENANT_ID: str | None = None
+    GRAPH_CLIENT_ID: str | None = None
+    GRAPH_CLIENT_SECRET: str | None = None
+
 
 settings = Settings()
