@@ -3,7 +3,7 @@ import json
 from dataclasses import asdict
 
 from app.db.session import SessionLocal
-from app.integrations.microsoft_graph import MicrosoftGraphClient
+from app.integrations.microsoft_graph_client import MicrosoftGraphClient
 from app.services.microsoft_graph_sync import sync_microsoft_graph
 
 

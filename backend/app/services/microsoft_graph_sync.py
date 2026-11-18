@@ -7,7 +7,7 @@ from typing import Any
 from sqlalchemy import select
 from sqlalchemy.orm import Session
 
-from app.integrations.microsoft_graph import MicrosoftGraphClient
+from app.integrations.microsoft_graph_client import MicrosoftGraphClient
 from app.models import (
     CopilotUsagePeriod,
     Department,
